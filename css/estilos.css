@@ -1,0 +1,249 @@
+/*Nombre: Aitor Uriarte Rodriguez
+Módulo: LMSGI.
+UD02 - Desarrollo web con HTML5 y CSS3
+Tarea: Tarea Evaluativa 2: Sitio Web
+Autoevaluación: https://docs.google.com/document/d/1dXk-kjNXOPXbjW32BmCeSy-2vkL20k_e/edit?usp=sharing&ouid=103292299957249991516&rtpof=true&sd=true
+Fecha: 01/12/2023*/
+
+/* El body tiene el mismo diseño en todas las páginas */
+body {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #143447;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+}
+
+/* Estilo de la cabecera, que se encuentra en todas las páginas */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* Estilo para la imagen que se encuentra en la cabecera */
+header img {
+    margin-right: 30rem;
+    width: 10%;
+}
+
+/* Links que se encuentran en el nav */
+nav a {
+    background-color: rgba(95, 158, 160, 0.535);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+section {
+    background-color: rgba(95, 158, 160, 0.535);
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    border: solid;
+    border-radius: 20px;
+    column-gap: 6rem;
+    padding: 2rem;
+}
+
+/*Cajas dentro del section*/
+.item {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    background: rgb(248, 109, 85);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2rem 8rem;
+    padding: 2rem 6rem;
+    row-gap: 2rem;
+}
+
+.item h2 {
+    text-decoration: underline;
+}
+
+.item img{
+    width: 50rem;
+    height: 20rem;
+    border: solid 3px;
+    border-radius: 2rem 4rem;
+}
+
+.ultimas-noticias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ultimas-noticias img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.contacto {
+    display: flex;
+}
+
+.formulario{
+    padding: 10px 180px;
+}
+
+article{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+footer a{
+    color: aliceblue;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Modelo de cada categoría de las distintas que se encuentran en la página listas*/
+.categoria-listas{
+    border: solid 3px aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    height: 17rem;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(68, 68, 68);
+    font-style: italic;
+    text-align: center;
+    border-radius: 2rem 6rem;
+    padding: 0px 15px;
+}
+
+/*Modelos para los links que llevan a distintas categorías*/
+.ciencia{
+
+    background-image: url(../img/ciencia.png);
+}
+
+.manga{
+    background-image: url(../img/manga.png);
+    
+}
+.divulgacion{
+    background-image: url(../img/divulgacion.png);
+}
+
+/*Modelo de caja donde se encuentran las noticias*/
+.bloque-noticias{
+    background-color: rgba(95, 158, 160, 0.535);
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bloque-noticias a{
+    color: aliceblue;
+}
+
+/*Cada noticia individual*/
+.noticia{
+    display: flex;
+    align-items: center;
+    border: solid;
+    padding: 5px 30px;
+    background: rgb(248, 109, 85);
+    font-weight: bold;
+    border-radius: 2rem 12rem;
+    margin: 0rem 15rem;
+    padding: 2rem;
+    gap: 20rem;
+}
+
+.noticia img {
+    position: relative;
+    border: solid;
+    border-radius: 2rem 5rem;
+    margin-left: 15rem;
+    width: 17rem;
+}
+
+.noticia a{
+    align-self: flex-end;
+}
+
+/*Modelo de caja donde se encuentran las reseñas*/
+.bloque-reseñas{
+    background-color: rgba(95, 158, 160, 0.535);
+    flex-grow: 1;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+/*Cada caja de reseña individual*/
+.numero-reseña{
+    display: flex;
+    align-items: center;
+    border: solid;
+    padding: 1rem;
+    background:  rgb(248, 109, 85);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2rem 10rem;
+    margin: 0px 20%;
+    gap: 8rem;
+}
+
+.numero-reseña img{
+    border: solid;
+    border-radius: 2rem 4rem;
+    margin-left: 10rem;
+    width: 12rem;
+}
+
+.numero-reseña a {
+    color: aliceblue;
+}
+
+/*Forma de la reseña dentro de la página*/
+.reseña {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 109, 85);
+    padding: 3rem 15rem;
+    border-radius: 2rem 10rem;
+}
+
+.reseña h1 {
+    text-decoration: underline;
+}
+.reseña img {
+    position: relative;
+    width: 60rem;
+    height: 18rem;
+    border: solid;
+    border-radius: 2rem 6rem;
+}
+

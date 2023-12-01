@@ -1,0 +1,68 @@
+<!--
+Nombre: Aitor Uriarte Rodriguez
+Módulo: LMSGI.
+UD02 - Desarrollo web con HTML5 y CSS3
+Tarea: Tarea Evaluativa 2: Sitio Web
+Autoevaluación: https://docs.google.com/document/d/1dXk-kjNXOPXbjW32BmCeSy-2vkL20k_e/edit?usp=sharing&ouid=103292299957249991516&rtpof=true&sd=true
+Fecha: 01/12/2023
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="">
+    <title>Reseñas de Libros</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+       <img src="img/logo_book.png" alt="logoweb">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="listado.html">Listado</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav> 
+    </header>
+
+    <section>
+        <article class="item contacto">
+            <h2>Contacto</h2>
+            <p>Si necesitas realizar alguna consulta en cuanto a la página web</p>
+            puedes ponerte en contacto con nosotros rellenando el siguiente formulario</p>
+        </article>
+
+        <article class="item formulario">
+           <form action="mailto:aiuriarte@birt.eus" method="POST"> 
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <label for="fname">Nombre</label>
+                    <input type="text" name="nombre"><br>
+                    <label for="lname">Apellido</label>
+                    <input type="text" name="apellido"><br>
+                    <label for="email">Correo</label>
+                    <input type="text" name="email"><br>
+                    <label for="Motivo">Motivo</label><br>
+                    <select name="opciones">
+                        <option value="Funcionamiento">Funcionamiento de la web</option>
+                        <option value="Trabajo">Trabaja con nosotros</option>
+                        <option value="Feedback">Opinión</option>
+                    </select><br>
+                    <label for="mesaje">Mensaje</label><br>
+                    <textarea name="mensaje" cols="50" rows="15" value="Escriba su comentario"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+                
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>Todas las imágenes de esta web han sido creadas mediante IA. Todos los derechos reservados.</p>
+        <a href="https://dreamstudio.ai/" target="_blank"> Stability.ai</a>
+    </footer>
+
+</body>
+</html>
